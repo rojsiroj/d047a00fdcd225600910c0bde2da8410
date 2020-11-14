@@ -7,5 +7,5 @@ Thank you
 
 Best Regards,
 
-Muhamad Sirojudin
+Muhamad Sirojudin <br />
 <a href="mailto:sirojudin.dev@gmail.com" target="_blank">Send mail</a> | <a href="https://api.whatsapp.com/send/?phone=6285880525009&text=Hello%20Siroj" target="_blank">Chat me</a>
