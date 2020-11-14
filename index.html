@@ -1,0 +1,603 @@
+<!-- index.html
+/    Muhamad Sirojudin <sirojudin.dev@gmail.com>
+/        Created: 13 Nov 2020
+/        Last Edited: 14 Nov 2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubiklan Web Developer Test</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- End Styles -->
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loading" class="justify-content-center">
+        <img id="loading-image" src="assets/images/logo.svg" width="200" height="auto" alt="Loading..." />
+        <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- End Loader -->
+    <!-- Navbar -->
+    <header id="page-header" class="fixed-top">
+        <div class="container-fluid">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#home">
+                        <img src="assets/images/logo.svg" alt="Ubiklan" width="100" height="auto" class="ubiklan-logo"> 
+                    </a> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-lg-auto">
+                            <li class="nav-item mt-4 mt-sm-4 mt-md-4 mt-lg-0">
+                                <a href="#about" class="nav-link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript();" class="nav-link dropdown-toggle" href="#" id="productDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="productDropdownMenuLink">
+                                    <a class="dropdown-item" href="#ubicar">
+                                        UbiCar
+                                    </a>
+                                    <a class="dropdown-item" href="#ubibike">
+                                        UbiBike
+                                    </a>
+                                    <a class="dropdown-item" href="#ubiman">
+                                        UbiMan
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#blog" class="nav-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#faq" class="nav-link">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#partner" class="nav-link">
+                                    Partner
+                                </a>
+                            </li>
+                            <li class="nav-item mr-lg-3">
+                                <a href="#career" class="nav-link">
+                                    Career
+                                </a>
+                            </li>
+                            <li class="nav-item mr-lg-3 mt-3 mt-sm-3 mt-md-3 mt-lg-0 py-1 login-btn-container button-nav">
+                                <a class="nav-link login-btn" href="#">
+                                    <i class="fas fa-circle fa-lg fa-fw text-secondary" aria-hidden="true"></i>
+                                    &nbsp;Login
+                                </a>
+                            </li>
+                            <li class="nav-item button-nav my-2 my-lg-0">
+                                <button type="button" class="btn btn-secondary sign-up-btn">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Main Content -->
+    <main class="wrapper overflow-hidden">
+        <!-- Banner Section -->
+        <div class="container-fluid">
+            <section id="banner" class="">
+                    <div class="jumbotron">
+                        <div class="container">
+                            <div class="row main-hero my-5">
+                                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                                    <h1 class="font-weight-bold">We innovate ways that put technology to<br />out-of-home ads.</h1>
+                                    <p class="text-mute">It's a modern twist to the traditional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- Featured Section -->
+            <section id="featured">
+                <div class="container" id="overview-container">
+                    <div class="row my-5 mx-3 py-5 px-3">
+                        <div class="col-md-6 col-lg-6 p-5 overview-image">
+                            <i class="fas fa-5x fa-image m-5"></i>
+                        </div>
+                        <div class="col-md-6 col-lg-6 overview-desc mt-5 mt-lg-0">
+                            <h3 class="overview-title text-center text-sm-center text-md-left text-lg-left">Meet Ubiklan.</h3>
+                            <h3 class="overview-title text-center text-sm-center text-md-left text-lg-left">The Ubiquitous Iklan.</h3>
+                            <p class="overview-text mt-3">Ubiklan is literally the advertising that goes everywhere. Just look at our name. We're ubiquitous iklan at heart and mind. That means, we continously strive to expand the horizons of out-of-home advertising beyond what your brand already knows. So that you too, can be everywhere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="font-weight-bold">As Featured On</h3>
+                    </div>
+                </div>
+                <div class="container pb-5 px-auto" id="featured-image-container">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-2 px-3 py-4">
+                            <div class="feature-images">
+                                <i class="far fa-image fa-3x my-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Featured Section -->
+
+            <!-- Why Section -->
+            <section id="why" class="why mt-5">
+                <div class="container">
+                    <div class="row text-center py-5">
+                        <div class="col-12 pb-4">
+                            <h2 class="font-weight-bold">Why Use Ubiklan?</h2>
+                            <p>The short answer is because there's absolutely no reason not to.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-7 col-sm-7 col-lg-4 text-right">
+                                    <h5 class="mt-3 text-secondary h5 font-weight-bold why-title">Online-based everything</h5>
+                                    <p class="why-desc mt-4">Launching, managing, and tracking your ads are available and acessible online through our web-app.</p>
+                                </div>
+                                <div class="col-5 col-sm-5 col-lg-2 mt-2 mt-lg-3 why-icon-container">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fas fa-circle fa-stack-2x why-icon-circle"></i>
+                                        <i class="fas fa-image fa-stack-1x why-icon-image"></i>
+                                    </span>
+                                </div>
+                                <div class="col-5 col-sm-5 col-lg-2 mt-5 mt-lg-3 why-icon-container">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fas fa-circle fa-stack-2x why-icon-circle"></i>
+                                        <i class="fas fa-image fa-stack-1x why-icon-image"></i>
+                                    </span>
+                                </div>
+                                <div class="col-7 col-sm-7 col-lg-4 mt-4 mt-lg-0 text-left">
+                                    <h5 class="mt-3 text-secondary h5 font-weight-bold why-title">Real-time tracking and monitoring</h5>
+                                    <p class="why-desc mt-4">Our GPS technology allows you to know exactly where the car is heading. Live data is possible in just a click away from the web app anytime and anywhere.</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-7 col-sm-7 col-lg-4 text-right">
+                                    <h5 class="mt-3 text-secondary h5 font-weight-bold why-title">Big data analytics</h5>
+                                    <p class="why-desc mt-4">Our BIG data system and algorithms let you know the number of impressions earned per location and time. Everything is summarized daily and monthly, and easily accessed online.</p>
+                                </div>
+                                <div class="col-5 col-sm-5 col-lg-2 mt-5 mt-lg-3 why-icon-container">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fas fa-circle fa-stack-2x why-icon-circle"></i>
+                                        <i class="fas fa-image fa-stack-1x why-icon-image"></i>
+                                    </span>
+                                </div>
+                                <div class="col-5 col-sm-5 col-lg-2 mt-5 mt-lg-3 why-icon-container">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fas fa-circle fa-stack-2x why-icon-circle"></i>
+                                        <i class="fas fa-image fa-stack-1x why-icon-image"></i>
+                                    </span>
+                                </div>
+                                <div class="col-7 col-sm-7 col-lg-4 mt-4 mt-lg-0 text-left">
+                                    <h5 class="mt-3 text-secondary h5 font-weight-bold why-title">Economical</h5>
+                                    <p class="why-desc mt-4">At about IDR 3.1 per impression, Ubiklan costs so much less than other out-of-hoe alternatives. You'll be surprised at how perfectly fit into your budget, even if yo're small or medium businesses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Why Section -->
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <h3 class="font-weight-bold text-center">But don't just take our word for it</h3>
+                        </div>
+                        <div class="col-sm-12 col-lg-12 my-3">
+                            <p class="text-center">Over the past years, we've worked with multiple brands accross multiple industries. From private to goverment companies.<br />From local to multinational. From small to huge. We've covered them all.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 my-3">
+                            <div id="gallerySlider" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators carousel-indicators-gallery">
+                                    <li data-target="#gallerySlider" data-slide-to="0" class="active previous round"><i class="far fa-angle-left"></i></li>
+                                    <li data-target="#gallerySlider" data-slide-to="1" class="next round"><i class="far fa-angle-right"></i></li>
+                                </ol>
+                            
+                                <div class="carousel-inner">
+                                    <div class="carousel-item p-5 carousel-item-gallery active">
+                                        <i class="far fa-image fa-10x d-block w-100 mt-5"></i>
+                                    </div>
+                                    <div class="carousel-item p-5 carousel-item-gallery">
+                                        <i class="far fa-image fa-10x d-block w-100 mt-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6 my-5 my-sm-5 my-lg-0 mx-auto ml-sm-2 ml-lg-0 pl-5 gallery-images-container">
+                            <div class="row">
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3 p-1 m-1 m-sm-3 m-lg-3 gallery-images">
+                                    <i class="far fa-image fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Gallery Section -->
+
+            <!-- Numbers Section -->
+            <section id="number" class="my-4 p-5">
+                <div class="row my-5">
+                    <div class="col-12">
+                        <h2 class="font-weight-bold text-center">Let the numbers talk</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center px-4">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-2 text-center py-5 m-2 number-content">
+                            <h2 class="number-content-title">1<sup>st</sup></h2>
+                            <p class="number-content-text font-weight-bold mt-5">Tech-based vehicle advertising</p>
+                        </div>
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-2 text-center py-5 m-2 number-content">
+                            <h2 class="number-content-title">>100K</h2>
+                            <p class="number-content-text font-weight-bold mt-5">Active drivers in total</p>
+                        </div>
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-2 text-center py-5 m-2 number-content">
+                            <h2 class="number-content-title">>20</h2>
+                            <p class="number-content-text font-weight-bold mt-5">Cities all across Indonesia</p>
+                        </div>
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-2 text-center py-5 m-2 number-content">
+                            <h2 class="number-content-title">900++</h2>
+                            <p class="number-content-text font-weight-bold mt-5">Campaigns launched and counting</p>
+                        </div>
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-2 text-center py-5 m-2 number-content">
+                            <h2 class="number-content-title">>100<br /><small>Million</small></h2>
+                            <p class="number-content-text font-weight-bold mt-3">Over hundreds of millions KM travelled</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Numbers Section -->
+
+            <!-- Brand Section -->
+            <section id="brand" class="my-5 p-5">
+                <div class="row my-5">
+                    <div class="col-12">
+                        <h2 class="font-weight-bold text-center">Your brand. All accross the nation.</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-5 mx-auto brand-image-container" data-tilt>
+                            <i class="fas fa-image fa-7x fa-fw my-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Brand Section -->
+
+            <!-- Partners Section -->
+            <section id="partners" class="pb-5 mx-auto">
+                <div class="container py-5 px-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 my-5">
+                            <h2 class="font-weight-bold text-center text-lg-left my-2">Our strategic partners</h2>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-9 my-5 mx-auto px-0 px-sm-5 px-lg-0 partner-images-container">
+                            <div class="row">
+                                <div id="partnerSlider" class="carousel slide mx-auto px-0 px-sm-5 px-lg-0" data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-indicators-partner">
+                                        <li data-target="#partnerSlider" data-slide-to="0" class="active previous round"><i class="far fa-angle-left"></i></li>
+                                        <li data-target="#partnerSlider" data-slide-to="1" class="next round"><i class="far fa-angle-right"></i></li>
+                                    </ol>
+                                
+                                    <div class="carousel-inner">
+                                        <div class="col-12 carousel-item active">
+                                            <div class="row">
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                        <div class="col-12 carousel-item">
+                                            <div class="row">
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                                <div class="col-4 col-sm-4 col-lg-3 py-4 px-0 px-lg-5 ml-5 my-2 partner-images">
+                                                    <i class="far fa-image fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Partners Section -->
+
+            <!-- Advertise Section -->
+            <section id="advertise">
+                <div class="container py-5 px-auto mx-auto">
+                    <div class="row">
+                        <div class="col-8 speech-bubble-container">
+                            <div class="speech-bubble p-5">
+                                <h2 class="font-weight-bold text-right speech-bubble-title">Looking to advertise?</h2>
+                                <p class="speech-bubble-text text-right">Learn more about what we can do to help you with your advertising.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-secondary py-1 px-3 px-sm-2 px-lg-5 advertise-arrow">
+                                Advertise Now&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Advertise Section -->
+        </div>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="footer-big mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 mr-lg-5 mx-sm-auto mx-md-auto text-lg-left text-sm-center text-md-center text-center">
+                        <div class="footer-widget">
+                            <div class="widget-address">
+                                <img src="assets/images/logo.svg" alt="Ubiklan Logo" width="100" height="auto" class="mb-4 ubiklan-logo">
+                                <p class="address font-weight-bold">Mall Taman Palem. Parkiran Lantai 8</p>
+                                <p class="address address-detail">
+                                    Jl. Kamal Raya, Kel. Cengkareng Timur,<br />
+                                    Kec. Cengkareng, Jakarta Barat<br />
+                                    DKI Jakarta, 11730
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 ml-lg-4 text-center text-sm-left text-md-left">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h5 class="footer-widget-title">About Ubiklan</h5>
+                                <ul class="text-lg-left">
+                                    <li>
+                                        <a href="#about">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#product">Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#faq">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#career">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-3 col-sm-5 text-center text-sm-left text-md-left">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h5 class="footer-widget-title">How We Can Help You?</h5>
+                                <ul>
+                                    <li class="ml-2">
+                                        <a href="#phone">
+                                            <i class="fa fa-circle fa-lg text-secondary"></i>&nbsp; 0819-3862-2017
+                                        </a>
+                                    </li>
+                                    <li class="ml-2">
+                                        <a href="#mail">
+                                            <i class="fa fa-circle fa-lg text-secondary"></i>&nbsp; sales@ubiklan.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu">
+                                <h5 class="footer-widget-title">Legal Terms</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#term">Term of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#privacy">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-3 col-sm-4 text-center text-sm-left text-md-left">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding">
+                                <h5 class="footer-widget-title" id="stay-connected">Stay Connected With Us</h5>
+                                <ul>
+                                    <li class="d-inline ml-0 ml-sm-3 ml-md-0 ml-lg-0 social-media-footer">
+                                        <a href="#fb">
+                                            <i class="fa fa-circle fa-3x"></i>
+                                        </a>
+                                    </li>
+                                    <li class="d-inline ml-0 ml-sm-3 ml-md-2 ml-lg-2 social-media-footer">
+                                        <a href="#in">
+                                            <i class="fa fa-circle fa-3x"></i>
+                                        </a>
+                                    </li>
+                                    <li class="d-lg-inline"></li>
+                                    <li class="d-inline ml-0 ml-sm-3 ml-md-0 ml-lg-2 social-media-footer">
+                                        <a href="#ig">
+                                            <i class="fa fa-circle fa-3x"></i>
+                                        </a>
+                                    </li>
+                                    <li class="d-inline ml-0 ml-sm-3 ml-md-2 ml-lg-2 social-media-footer">
+                                        <a href="#yt">
+                                            <i class="fa fa-circle fa-3x"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mt-4 mx-auto mx-lg-0" id="imageLinkFooter" class="social-media-footer">
+                                        <a href="#bla">
+                                            <i class="far fa-fw fa-image fa-3x my-2"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+        <!-- Mini Footer -->
+        <div class="mini-footer text-center mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>
+                                © 2019
+                                Ubiklan Technologies. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Mini Footer -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tilt.jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Scripts -->
+</body>
+</html>
